@@ -1,4 +1,4 @@
-package com.example.demo.controller.pojo;
+package com.example.demo.pojo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
