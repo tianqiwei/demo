@@ -1,0 +1,18 @@
+server:
+  port: 9090
+wtq:
+  name: Tianqi WEI
+  nationality: Chinese
+  age: 28
+  address:
+    street number: 114
+    street: rue salvador allende
+    city: Nanterre
+    postal code: 92000
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
