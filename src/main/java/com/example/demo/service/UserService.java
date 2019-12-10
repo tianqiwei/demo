@@ -7,8 +7,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
+
+    private final UserInfoMapper userInfoMapper;
+
     @Autowired
-    UserInfoMapper userInfoMapper;
+    public UserService(UserInfoMapper userInfoMapper) {
+        this.userInfoMapper = userInfoMapper;
+    }
 
     public void createUser(String tel,String pwd) {
         userInfoMapper.createUser(tel,pwd);

@@ -12,8 +12,12 @@ import java.util.List;
 @Repository
 public class UserInfoImpl implements UserInfoMapper {
 
+    private final JdbcTemplate jdbcTemplate;
+
     @Autowired
-    private JdbcTemplate jdbcTemplate;
+    public UserInfoImpl(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     @Override
     public void createUser(String tel,String pwd) {
